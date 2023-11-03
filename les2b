@@ -1,0 +1,12 @@
+var readlineSync = require("readline-sync");
+
+var leeftijd = readlineSync.question("Goedenavond, hoe oud bent u? ");
+
+if (leeftijd >= 18 ) {
+    var id = readlineSync.question("Mag ik je ID zien? ");
+    if (id == "ja") {
+        console.log("Kom verder");
+    } 
+} else {
+    console.log("Sorry, maar u kunt niet verder.");
+}
